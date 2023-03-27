@@ -194,7 +194,9 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 480px) {
+@media screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px){
     nav ul {
         display: none;
     }
