@@ -17,15 +17,23 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-section {
-  margin-bottom: 100px; /* adjust the value to add more or less space */
+    
 }
 
 header h1 {
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 700;
+    font-family: 'Kanit', sans-serif;
+    color: #87CEEB;
+}
+
+.header-link {
+  text-decoration: none;
+}
+
+
+section {
+  margin-bottom: 100px; /* adjust the value to add more or less space */
 }
 
 nav {
@@ -58,10 +66,10 @@ nav ul li a:hover {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   line-height: 2;
   margin-left: 40px;
   color: #FF7F50;
