@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="scripts.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natalie's Recipes</title>
@@ -10,27 +11,26 @@
 
 <body>
     <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Ingredients</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
         <a href="index.html" class="header-link">
             <h1>Natalie's Recipes</h1>
         </a>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap" rel="stylesheet">
-        <nav>
-            <ul>
-                <li><a href="#">RECIPES</a>
-                    <ul class="submenu">
-                        <li><a href="#">Chicken</a></li>
-                        <li><a href="#">Beef</a></li>
-                        <li><a href="#">Pork</a></li>
-                        <li><a href="#">Seafood</a></li>
-                        <li><a href="desert/index.html">Dessert</a></li>
-                    </ul>
-                </li>
-                </li>
-                <li><a href="#">ABOUT ME</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
@@ -67,8 +67,16 @@
     <footer>
         <p>&copy; 2023 Recipe Website. All rights reserved.</p>
     </footer>
-
-    <script src="scripts.js"></script>
+    <script>
+            function toggleMenu() {
+                  var menu = document.getElementById("menu");
+                  if (menu.style.display === "block") {
+                    menu.style.display = "none";
+                  } else {
+                    menu.style.display = "block";
+                  }
+                }
+            </script>
 </body>
 
 </html>
