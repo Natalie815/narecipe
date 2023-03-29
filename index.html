@@ -12,11 +12,17 @@
 <body>
     <header>
         <div class="menu-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+            &#9776;
+        </div>
+        <div id="menu" class="menu">
+          <div class="menu-header">
+            <span class="close-icon" onclick="toggleMenu()">X</span>
           </div>
-        <nav id="menu">
+          <nav>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Recipes</a></li>
@@ -24,7 +30,9 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
+          </nav>
+        </div>
+
         <a href="index.html" class="header-link">
             <h1>Natalie's Recipes</h1>
         </a>
@@ -35,31 +43,31 @@
 
     <main>
         <section class="recipe-list">
-            <h2>Latest Recipes</h2>
+            <h2>The Latest</h2>
             <div class="recipe-grid">
                 <div class="recipe">
-                <img src="Chiffon Cake/chiffoncake.jpg">
-                <h3>Chiffon Cake</h3>
-                <p>Chiffon cake is a light, airy, and tender cake known for its unique combination of a moist sponge cake's richness and the fluffiness of an angel food cake. </p>
-                <a href="Chiffon Cake/index.html">
+                    <img src="Chiffon Cake/chiffoncake.jpg">
+                    <h3>Chiffon Cake</h3>
+                    <p>Chiffon cake is a light, airy, and tender cake known for its unique combination of a moist sponge cake's richness and the fluffiness of an angel food cake. </p>
+                    <a href="Chiffon Cake/index.html">
+                    <button onclick="showRecipeDetails()">View Recipe</button></a>
+                </div>    
+                <div class="recipe">
+                    <img src="Chocolate Cookies/cookie.jpg">
+                    <h3>Chocolate Cookies</h3>
+                    <p>Indulge in the heavenly taste of chocolate cookies, a perfect treat for all the sweet-toothed dessert lovers. </p>
+                    <a href="">
                     <button onclick="showRecipeDetails()">View Recipe</button>
-                </a>
-            </div>
-            <div class="recipe">
-                <img src="Chocolate Cookies/cookie.jpg">
-                <h3>Chocolate Cookies</h3>
-                <p>Indulge in the heavenly taste of chocolate cookies, a perfect treat for all the sweet-toothed dessert lovers. </p>
-                <a href="">
+                    </a>
+                </div>
+                <div class="recipe">
+                    <img src="">
+                    <h3>Kung Bao Chicken</h3>
+                    <p>Chicken </p>
+                    <a href="">
                     <button onclick="showRecipeDetails()">View Recipe</button>
-                </a>
-            </div>
-            <div class="recipe">
-                <img src="">
-                <h3>Kung Bao Chicken</h3>
-                <p>Chicken </p>
-                <a href="">
-                    <button onclick="showRecipeDetails()">View Recipe</button>
-                </a>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -67,16 +75,6 @@
     <footer>
         <p>&copy; 2023 Recipe Website. All rights reserved.</p>
     </footer>
-    <script>
-            function toggleMenu() {
-                  var menu = document.getElementById("menu");
-                  if (menu.style.display === "block") {
-                    menu.style.display = "none";
-                  } else {
-                    menu.style.display = "block";
-                  }
-                }
-            </script>
 </body>
 
 </html>
